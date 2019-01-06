@@ -1,0 +1,82 @@
+#project{
+    background: #333333;
+    height: 100%;
+    padding: 80px;
+    display: flex;
+}
+
+h4{
+    color: aliceblue;
+}
+
+
+.project_lightBox{
+    width:90%;
+    height: 400px;
+    overflow: hidden;
+    transition: .5s;
+    display: flex;
+    margin-bottom:160px;
+    img{
+       width: 100%;
+       height: 100%;
+    }&:hover{
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+
+.project_content{
+    flex-grow: 1;
+    padding: 30px;
+    width: 600px;
+    color:aliceblue;
+    a{
+        color: aliceblue;
+    }
+}
+
+.modal{
+    width: 1200px;
+    height:800px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 0px 0;
+    top: 20px;
+    left: 0;
+    // padding-top: 100px;
+    overflow: auto;
+    background-color: black;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .caption-container{
+        color: aliceblue;
+        h5{
+            font-weight: bold;
+            font-size: 1.6em;
+        }
+        p{
+            font-size: 1.3em;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: .5s;
+    &:hover{
+        cursor: pointer;
+        color: rgb(171, 167, 167);
+    }
+  }
